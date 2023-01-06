@@ -1,4 +1,4 @@
-// Variables
+// VARIABLES (1)
 var nombre = "David";
 
 // Declarar
@@ -18,6 +18,34 @@ var elementos = ['computadora', 'celular'];
 var persona = {
     nombre: 'David',
     edad: 30
+}
+
+//FUNCIONES (2)
+
+//Funciones declarativas
+
+// la funcion inicializa la operación y retorna un valor que en este caso es 3
+
+function miFuncion() {
+    return 3;
+}
+
+miFuncion();
+
+// Funciones expresivas o expresadas
+
+var miFuncion = function(a, b) {
+    return a + b;
+}
+
+miFuncion();
+
+function personaje (nombre, edad) {
+    console.log (`hola soy ${nombre} y tengo ${edad} años`)
+}
+
+var personajeDos = function (nombre, edad) {
+    console.log (`Hola soy ${nombre} y tengo ${edad} años`)
 }
 
 
