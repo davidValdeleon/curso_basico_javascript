@@ -49,3 +49,38 @@ var personajeDos = function (nombre, edad) {
 }
 
 
+// HOISTING (3)
+
+//Con las variables pasa cuando una variable no se ha declarado antes de ser usada, aparece el valor undefined
+
+console.log(miNombre)
+
+var miNombre = "David";
+
+//Para funciones. En este caso se inicializa la función en cualquier momento, no importa si es antes o después de declararla.
+
+hola();
+
+function hola(){
+    console.log("Hola " + miNombre);
+}
+
+//IF (4) Condicionales
+
+if (false) {
+    console.log("hello")
+} else {
+    console.log("Soy falso");
+}
+
+//Ejemplo de ua variable con condicional If donde si el usuario tiene
+
+var edad = 18
+
+if (edad === 18) {
+    console.log("Puedes votar, sera tu primera votación");
+} else if (edad >18) {
+    console.log("Puedes votar");  
+} else {
+    console.log("No Puedes votar");  
+}
