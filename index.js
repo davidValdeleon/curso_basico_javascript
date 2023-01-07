@@ -84,3 +84,30 @@ if (edad === 18) {
 } else {
     console.log("No Puedes votar");  
 }
+
+// Otra forma de hacer condicionales
+
+// No es necesario hacer toda una estructura de condicional para este tipo de función sencillas.
+
+var numero = 1;
+
+var resultado = numero === 1 ? "Si soy un uno" : "No soy un uno";
+
+// vamos a hacer un juego de piedra papel o tijera
+
+// Primero se crea una constante con las opciones que se pueden escoger, luego se obtiene lo que el usuario escoja a partir de un prompt y por último se crea una opcion aleatoria por medio de Math.floor y el Math.random. Por ultimo se pone un if con los condicionales necesarios para poder validar
+
+const options = ['piedra','papel', 'tijera']
+const user = prompt('Elige piedra, papel o tijera');
+const pc = options[Math.floor(Math.random() * options.length)];
+
+if (user === pc){
+    console.log("Empate");
+} else if (
+user === 'piedra' && pc === 'tijera' ||
+user === 'papel' && pc === 'piedra' || 
+user === 'tijera' && pc === 'papel'){
+    console.log("ganaste");
+} else {
+    console.log("perdiste")
+}
