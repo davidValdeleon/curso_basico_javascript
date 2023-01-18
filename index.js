@@ -190,3 +190,50 @@ switch(user3 === pc3) {
     default:
         console.log("opcion invalida");
 }
+
+//ARRAYS
+// Los arrays son conjuntos de elementos que estan dentro de un objeto
+
+var frutas = ['manzana', 'pera', 'banana'];
+
+// Para llegar a cada uno de los elementos, se utilizan indicativos desde el 0 en adelante luego de llamar la variable, en este caso sería.
+
+frutas [0];
+// Esto llamara el elemento de 'manzana'
+
+frutas [1];
+// Esto llamara el elemento de 'manzana'
+
+frutas [2];
+// Esto llamara el elemento de 'banana'
+
+
+// Por otro lado para saber cual es la longitud de los arrays, se puede utilizar el .length
+
+console.log(frutas.length);
+
+// Para agregar más elementos al array, se utiliza la variable .push()
+
+var masFrutas = frutas.push('uvas');
+//Luego de estó el array de frutas quedaria de la conformado por 'manzana', 'pera', 'banana''uvas'
+
+// Ahora si quiero quitar el último elemento del array vamos a usar el .pop(), funcionaría de la siguiente manera
+
+var quitarUltimaFruta = frutas.pop();
+// De tal manera que al momento de ejecutarlo, dentro del array quedaría el siguiente contenido: 'manzana', 'pera', 'banana'
+
+// Si quiero agregar más elementos pero quiero que aparezcan de primeras en la lista, vamos a usar el .unshift()
+
+var nuevaLongitud = frutas.unshift('Limon');
+//la lista quedaría de la siguiente manera 'Limon' 'manzana', 'pera', 'banana'
+
+// Ahora bien, para eliminar el primer elemento de la fila de elementos se usa el .shift de la siguiente manera
+
+var borrarFruta = frutas.shift('Limon');
+//Esto solo elimina el primer elemento de cada fila, por más que cambiemos el nombre, siempre elimina el primero del array que le indiquemos
+
+// Para obtener el index de los arrays con el nombre vamos a usar .indexOf("nombre") con el nomnbre que querramos traer
+
+var posicion = frutas.indexOf('manzana');
+
+
