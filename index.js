@@ -238,12 +238,27 @@ var posicion = frutas.indexOf('manzana');
 
 //LOOPS FOR - FOR..OF
 
-var estudiantes = ['Maria', 'Rosa', 'David'];
+//En este caso los for sirven para recorrer arrays, en el siguiente ejemplo, el array es estudiantes
+
+var estudiantes = ['Maria', 'Rosa', 'David', 'juan'];
+
+//Luego se va a acrear la función que se va a ejecutar luego de recorrer el array
 
 function saludarEstudiantes(estudiante) {
     console.log(`hola, ${estudiante}`);
 }
 
+//Por último se crea el ciclo for, donde la variable i se inicia con 0, luego se da la condición, donde se dice que se va a ejecutar el código, cada vez que i sea menor a la longitud de el array que en este caso es 'estudiantes' por lo tanto se utiliza estudiantes.length, por último se crea la condición que debe seguir el for luego de verificar que el número sea menor que la longitud del array y se haya ejecutado el código, en este caso, la condición que debe seguir es aumentar un número a la 'i' y volver a repetir todo el ciclo.
+
+for(var i = 0; i < estudiantes.length; i++){
+    saludarEstudiantes(estudiantes[i]);
+}
+
+//La segunda opción para operar un ciclo dentro de un array es a partir de un for.. of , esto se usa de la siguiente manera, se crea una variable en singular que servira cómo el index que se va a recorrer, luego se pone la palabra 'of' y por ultimo se pone el array que se va  a recorrer, en la medida de lo posible en plural, esto ayuda a minimizar la cantidad de código que vamos a escribir y nos ayuda a agilizar el proceso, en este caso no es necesario definir una variable 0 y poner un limite a esta variable cómo si se hace en el primer ejemplo del ciclo for, ahora bien, la variable en singular antes del 'of' sive para definir esa variable 'i' y para indicar que se va a detener el ciclo cuando ya no hayan más elementos dentro del array
+
+for (var estudiante of estudiantes){
+    saludarEstudiantes(estudiante);
+}
 
 
 
