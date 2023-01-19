@@ -275,3 +275,36 @@ while(estudiantes.length>0){
     saludarEstudiantes(estudiante);
 }
 
+//Ejemplos para usar WHILE
+// Ejercicio 1: Escribir los números del 1 al 10
+
+var numero = 1;
+
+while (numero<=10){
+    console.log(numero);
+    numero ++;
+}
+
+//Sumar los números del 1 al 10 usando un ciclo while.
+
+var numero = 0;
+var x = 0;
+
+while (numero<=10){
+    numero ++;
+    x + numero;
+}
+
+console.log(numero)
+
+// Imprimir los números pares del 2 al 10 usando un ciclo while.
+// Calcular el factorial de un número dado usando un ciclo while.
+// Imprimir los elementos de una lista dada usando un ciclo while.
+// Buscar un elemento específico en una lista dada y devolver su posición usando un ciclo while.
+// Crear un juego adivinanza usando un ciclo while.
+// Crear una calculadora básica que permita al usuario ingresar operaciones matemáticas básicas usando un ciclo while.
+// Crear un programa que permita al usuario ingresar palabras y las guarde en una lista hasta que el usuario ingrese "fin" usando un ciclo while.
+// Crear un programa que permita al usuario adivinar un número secreto y le informe si su adivinanza es mayor o menor hasta que adivine el número correcto usando un ciclo while.
+
+
+
