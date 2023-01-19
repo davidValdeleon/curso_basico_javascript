@@ -236,4 +236,14 @@ var borrarFruta = frutas.shift('Limon');
 
 var posicion = frutas.indexOf('manzana');
 
+//LOOPS FOR - FOR..OF
+
+var estudiantes = ['Maria', 'Rosa', 'David'];
+
+function saludarEstudiantes(estudiante) {
+    console.log(`hola, ${estudiante}`);
+}
+
+
+
 
