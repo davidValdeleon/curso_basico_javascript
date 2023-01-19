@@ -260,7 +260,18 @@ for (var estudiante of estudiantes){
     saludarEstudiantes(estudiante);
 }
 
-//Nueva clase
+//CICLO WHILE
+//En este caso para usar el while, es un poco diferente debido a que la condición que se genere dentro del ciclo se seguira cumpliendo hasta que deje de ser verdad.
 
+var estudiantes = ['Maria', 'Rosa', 'David', 'juan'];
 
+function saludarEstudiantes(estudiante) {
+    console.log(`hola, ${estudiante}`);
+}
+
+//Ahora bien, para este caso lo que dice la función es que se va a ejecutar la función saludarEstudiantes hasta el momento en el que el la longitud del array de estudiantes deje de ser mayor a 0, para comprobar esto lo que vamos a hacer es sacar una variable estudiante la cual será igual a estudiantes.shift(); que lo que hace es sacar el primer elemento del array y ponerlo en la variable de estudiante, de está forma cada vez que se ejecute el código se va a ir eliminando un elemento del array.
+while(estudiantes.length>0){
+    var estudiante = estudiantes.shift();
+    saludarEstudiantes(estudiante);
+}
 
